@@ -1,0 +1,243 @@
+/**
+ *    Primary 
+ *
+ *
+ *    MIT colors
+ *    Red PMS 201: RGB: 163; 31; 52; Hex: #A31F34
+ *    Dark Grey PMS 424: RGB: 138; 139; 140; Hex: #8A8B8C
+ *    Light Grey PMS 420: RGB: 194; 192; 191; Hex: #C2C0BF
+ **/
+html {
+	background-color: #E76A28;
+	background: url(images/circles_craig_green2.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #222;
+}
+#container {
+	background-color: white;
+	padding: 0.5em 0.5em 0 0.5em;
+	margin: 0 auto 0 auto;
+	max-width: 50em;	
+}
+
+p {
+	max-width: 35em;
+	line-height: 1.6em;
+}
+h1, h2, h3, h4, h5, h6, nav {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #3AA2F9;
+}
+h1 {
+	font-size: 2.1em;
+}
+h2 {
+	font-size: 1.3em;
+	font-weight: 900;
+	letter-spacing: 0.1em;
+}
+h3 {
+	font-size: 0.9em;
+	font-weight: 900;
+	letter-spacing: 0.05em;
+	margin: 1.5em 0 0 0;
+}
+h4 {
+	margin: 1.5em 0 0.2em 0;
+}
+a:active, a:link, a:visited {
+	color: #E76A28;
+	text-decoration: none;
+}
+a:hover {
+	color: #E76A28;
+	border-bottom: solid #E76A28 4px;		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ *    Other Components 
+ *
+ **/
+.main-section {
+	border-left: solid #3AA2F9 5px;
+	margin-bottom: 3em;
+	padding: 0 0.5em 0 0.5em;
+}
+.main-section h2 {
+	text-transform: uppercase;
+	margin: 0 0 0.75em 0;
+}
+.tagline {
+	font-style: italic;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.09em;
+	margin: 0;
+}
+.bullets {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.bullets li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.bullets li:before {
+  content: "—";
+}
+
+
+
+
+
+/**
+ *    Footer
+ *
+ */
+footer {
+	background-color: #3AA2F9;
+	border-top: solid 8px rgba(66,147,243,0.8);
+	border-bottom: solid 2px rgba(66,147,243,0.6);
+	margin: 0 -0.5em 0 -0.5em;
+	padding: 1.5em 0.5em 1.5em 1em;
+}
+.footer-link .logo {
+	margin-right: 1em;
+}
+.footer-link img {
+	display: inline;
+	vertical-align: baseline;
+	max-width: 30px;
+}
+#sutd img {
+	max-width: inherit;
+	width: 100px;
+}
+#urop img {
+	max-width: inherit;
+	height: 20px;
+}
+a:hover {
+	color: black;
+	border-bottom: solid black 4px;		
+}
+
+
+
+/**
+ *    Team member
+ *
+ */
+.team-member img {
+	max-width: 150px;
+	/*float: right;*/
+	margin: 0.5em 0.5em 0 0;
+	border: solid 5px #AFF890;
+}
+	
+
+
+
+
+
+
+
+/**
+ *    Logo
+ *
+ */
+#mit-logo {
+	float: right;
+	margin-top: 10px;
+}
+#page-logo {
+	float: left;
+	margin: 0; padding: 0;	
+	display: inline-block;
+	position: relative;
+}
+#imel-interactive-logo {
+	position: absolute;
+	left: 0; top: 0;
+}
+
+
+
+/**
+ *    Navigation 
+ *
+ **/
+nav {
+	float: left;
+	
+	margin: 0 0 2.5em 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 0.9em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	border: none;
+}
+nav ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	margin-right: 2em;
+}
+nav a {
+	text-decoration: none;
+}
+
+
+
+
+
+/**
+ *    Large-screen mobile-first breakpoints 
+ *
+ **/
+ @media screen and (min-width: 50em) {
+	 .team-member {
+		 position: relative;
+		 margin-bottom: 1em;
+		 min-height: 165px;
+	 }
+	 .team-member img {
+		 position: absolute;
+		 right: 0;
+		 top: -0.5em;
+	 }
+	 
+	 .footer-link img {
+	 	max-width: 45px;
+	 }
+	 #sutd img {
+	 	max-width: inherit;
+	 	width: 150px;
+	 }
+	 #urop img {
+	 	max-width: inherit;
+	 	height: 30px;
+	 }
+ }
