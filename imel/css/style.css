@@ -104,7 +104,18 @@ a:hover {
 .bullets li:before {
   content: "—";
 }
-
+.image-gallery {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.image-gallery img {
+	max-width: 100%;
+	width: 500px;
+	
+	margin: 0.5em 0.5em 0 0;
+	border: solid 1px rgba(175, 248, 144, 0.5);
+}
 
 
 
@@ -147,7 +158,7 @@ a:hover {
  *    Team member
  *
  */
-.team-member img {
+.team-member img, .team-member-img {
 	max-width: 150px;
 	/*float: right;*/
 	margin: 0.5em 0.5em 0 0;

@@ -24,9 +24,10 @@ var windowLoadWidth;
 var ROTATION_SPEED = 2.0;
 var mouseLoadX;
 var sketchFocused = false;
+var scriptsPath = calculateScriptsPath();
 
 function preload() {
-  latoBold = loadFont('/js/assets/Lato-Black.ttf');
+  latoBold = loadFont(scriptsPath+'assets/Lato-Black.ttf');
 }
 
 function setup() {
@@ -154,4 +155,26 @@ function drawHexagon2(x, y, radius, angle) {
   }
   endShape(CLOSE);
   pop();
+}
+
+// https://stackoverflow.com/questions/143847/best-way-to-find-if-an-item-is-in-a-javascript-array
+function containing(arr, obj) {
+    for(var i=0; i<arr.length; i++) {
+        if (arr[i].src.indexOf(obj) !== -1) return arr[i].src;
+    }
+    return undefined;
+}
+
+function calculateScriptsPath() {
+  // get path for scripts
+  // ref: https://stackoverflow.com/questions/2161159/get-script-path
+  var scripts = document.getElementsByTagName('script');
+  var script = containing(scripts, "imel-logo.js");
+  if (typeof script != 'undefined') {
+    var path = script.split('?')[0]; // remove ?query
+    var scriptsPath = path.split('/').slice(0, -1).join('/')+'/';  // remove last filename part of path
+    return scriptsPath;
+  }
+
+  return ""; // unknown
 }
