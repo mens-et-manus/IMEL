@@ -60,7 +60,12 @@ a:hover {
 	color: #E76A28;
 	border-bottom: solid #E76A28 4px;		
 }
-
+strong {
+	font-weight: 700;
+	color: white;
+	background-color: #3AA2F9;
+	padding: 0 3px;
+}
 
 
 
@@ -214,6 +219,7 @@ nav ul {
 	padding: 0;
 }
 nav li {
+	float: left;
 	margin-right: 2em;
 }
 nav a {
