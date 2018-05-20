@@ -3,7 +3,7 @@
 // var HEX_SIZE = 100;
 // var HEX_BORDER = 12;
 
-var W = 400;
+var W = 320;
 var H = 100;
 var HEX_SIZE = 40;
 var HEX_BORDER = 6;
