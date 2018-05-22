@@ -27,6 +27,9 @@ body {
 	max-width: 50em;	
 }
 
+ul,ol {
+	max-width: 40em;
+}
 p {
 	max-width: 35em;
 	line-height: 1.6em;
