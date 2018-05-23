@@ -1,0 +1,7 @@
+https://imel.mit.edu {
+	root C://Users/Kyle/Documents/GitHub/IMEL/
+	
+	git https://github.com/mens-et-manus/IMEL.git {
+		hook /webhook "put the secret pass here do not commit"
+	}
+}

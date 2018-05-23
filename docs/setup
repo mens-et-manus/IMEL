@@ -10,3 +10,6 @@ C:\Users\Kyle\AppData\Local\GitHubDesktop\app-1.0.13\resources\app\git\cmd\git.e
 clone website repo
 
 write script to cd into repo and run Caddy
+
+Copy Caddyfile to C://Users/Kyle/Documents/
+change secret pass to one set at https://github.com/mens-et-manus/IMEL/settings/hooks
