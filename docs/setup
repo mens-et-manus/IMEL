@@ -1,15 +1,23 @@
 install caddy server
+choose optional package git-caddy during install
+
 mine is at C://Caddy/caddy.exe
-could have put in PATH
 
 download and install GitHubDesktop
-then add this to path for the git caddy add-on
+clone website repo to C://Users/Kyle/Documents/GitHub/IMEL
 
-C:\Users\Kyle\AppData\Local\GitHubDesktop\app-1.0.13\resources\app\git\cmd\git.exe
+create webhook called webhook for IMEL at https://github.com/mens-et-manus/IMEL/settings/hooks
 
-clone website repo
+download and install Git https://git-scm.com/
+Select the default option `Use Git from the Windows Command Prompt`
 
-write script to cd into repo and run Caddy
+Add `C:/Program Files/Git/bin` to PATH for all users
+git-caddy requires access to git on path, as well as one of sh or bash, which are included
+with Git for Windows install
 
 Copy Caddyfile to C://Users/Kyle/Documents/
 change secret pass to one set at https://github.com/mens-et-manus/IMEL/settings/hooks
+
+Copy run.bat to desktop
+
+Double-click run.bat to launch Caddy
