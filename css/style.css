@@ -8,7 +8,7 @@
  *    Light Grey PMS 420: RGB: 194; 192; 191; Hex: #C2C0BF
  **/
 html {
-	background-color: #E76A28;
+	background-color: #8EF890;
 	background: url(images/circles_craig_green2.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -119,6 +119,7 @@ strong {
 .main-section {
 	border-left: solid #3AA2F9 5px;
 	margin-bottom: 3em;
+	margin-right: 0.75em;
 	padding: 0 0.5em 0 0.5em;
 }
 .main-section h2 {
@@ -219,6 +220,7 @@ a:hover {
 #mit-logo {
 	float: right;
 	margin-top: 10px;
+	margin-right: 10px;
 }
 #page-logo {
 	float: left;
@@ -252,10 +254,12 @@ nav ul {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
+	max-width: 100%;
 }
 nav li {
 	float: left;
 	margin-right: 2em;
+	line-height: 1.6em;
 }
 nav a {
 	text-decoration: none;
