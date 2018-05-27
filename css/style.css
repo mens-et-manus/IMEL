@@ -170,15 +170,18 @@ footer {
 	border-top: solid 8px rgba(66,147,243,0.8);
 	border-bottom: solid 2px rgba(66,147,243,0.6);
 	margin: 0 -0.5em 0 -0.5em;
-	padding: 1.5em 0.5em 1.5em 1em;
+	padding: 1.5em 0.5em 1.5em 0.5em;
 }
 .footer-link .logo {
 	margin-right: 1em;
 }
+.footer-link .logo:last-child {
+	margin-right: 0;
+}
 .footer-link img {
 	display: inline;
 	vertical-align: baseline;
-	max-width: 30px;
+	max-width: 25px;
 }
 #sutd img {
 	max-width: inherit;
@@ -284,7 +287,6 @@ nav a {
 		 right: 0;
 		 top: -0.5em;
 	 }
-	 
 	 .footer-link img {
 	 	max-width: 45px;
 	 }
