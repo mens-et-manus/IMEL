@@ -1,3 +1,4 @@
+======== Caddy Setup =======
 install caddy server
 choose optional package git-caddy during install
 
@@ -18,6 +19,34 @@ with Git for Windows install
 Copy Caddyfile to C://Users/Kyle/Documents/
 change secret pass to one set at https://github.com/mens-et-manus/IMEL/settings/hooks
 
-Copy run.bat to desktop
+Create a shortut to run.bat, copy to desktop
 
 Double-click run.bat to launch Caddy
+
+
+
+
+======== Windows Setup =======
+Sign-in options: Require sign-in never
+Setup auto-login: 
+Search for Run, run it
+type control userpasswords2 into Run dialog, hit enter
+Uncheck "Users must enter a user name and password to use this computer"
+Click OK,
+then you will prompted for password of user to auto-login as
+
+Enable auto-start of server:
+Create a shortcut to run.bat, copy to desktop
+also copy to shell:startup
+see https://www.computerhope.com/issues/ch000322.htm
+
+Windows Update Settings:
+Change Active Hours to 7am-1am
+
+Load Group Policy
+see: https://docs.microsoft.com/en-us/windows/deployment/update/waas-restart
+Then double-click HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\Configure Automatic Updates
+
+Set to enabled, 
+Auto download and schedule the install
+Every Saturday 4:00
