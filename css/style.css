@@ -217,6 +217,12 @@ a:hover {
  *    Team member
  *
  */
+.team-member h4 {
+	margin-bottom: 0;
+}
+.team-member h5 {
+	margin: 0.3em 0 0.4em 0;
+}
 .team-member img, .team-member-img {
 	max-width: 150px;
 	/*float: right;*/
