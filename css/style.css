@@ -232,6 +232,39 @@ a:hover {
 
 
 /**
+ *    Impact Section
+ *
+ */
+.impact-blurb:before,.impact-blurb:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */	
+}
+.impact-blurb:after {
+ 	clear: both;
+}
+.impact-blurb {
+	margin-bottom: 1em;
+}
+.impact-blurb img {
+	max-width: 150px;
+	/*float: right;*/
+	margin: 0 1em 0.5em 0;
+	border: solid 5px #AFF890;
+	text-outline: none;
+}
+.impact-blurb p {
+ max-width: 40em;
+ margin: 0;
+}
+
+ 
+ 
+
+
+
+
+
+/**
  *    Logo
  *
  */
@@ -291,6 +324,12 @@ nav a {
  *    Large-screen mobile-first breakpoints 
  *
  **/
+@media screen and (min-width: 30em) {
+	.impact-blurb img {
+		float: left;
+		margin-bottom: 0;
+	}
+}
  @media screen and (min-width: 50em) {
 	 .team-member {
 		 position: relative;
@@ -301,7 +340,7 @@ nav a {
 		 position: absolute;
 		 right: 0;
 		 top: -0.5em;
-	 }
+	 }	 
 	 .footer-link img {
 	 	max-width: 45px;
 	 }
